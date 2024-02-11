@@ -1,6 +1,6 @@
 package br.com.ruanmoraes.certification_nlw.modules.questions.entities;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -27,5 +27,5 @@ public class AlternativesEntity {
     private boolean isCorrect;
 
     @CreationTimestamp
-    private LocalDate createdAt;
+    private LocalDateTime createdAt;
 }

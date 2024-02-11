@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import br.com.ruanmoraes.certification_nlw.modules.questions.entities.QuestionEntity;
 
-public interface QuestionRepository extends JpaRepository<QuestionEntity, UUID>{
-    List<QuestionEntity> findByTechnology(String technology);   
+public interface QuestionRepository extends JpaRepository<QuestionEntity, UUID> {
+
+    List<QuestionEntity> findByTechnology(String technology);
 }

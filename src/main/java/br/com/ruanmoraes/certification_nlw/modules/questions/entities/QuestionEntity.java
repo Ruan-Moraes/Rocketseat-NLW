@@ -1,6 +1,6 @@
 package br.com.ruanmoraes.certification_nlw.modules.questions.entities;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -22,6 +22,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity(name = "questions")
 public class QuestionEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
@@ -36,5 +37,5 @@ public class QuestionEntity {
     private List<AlternativesEntity> alternatives;
 
     @CreationTimestamp
-    private LocalDate createdAt;
+    private LocalDateTime createdAt;
 }
